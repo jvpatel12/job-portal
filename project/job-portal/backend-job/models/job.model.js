@@ -48,6 +48,6 @@ const jobSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Application'
     }]
-});
+},{timestamps:true});
 
 export default job =  monogoose.model('Job', jobSchema);
